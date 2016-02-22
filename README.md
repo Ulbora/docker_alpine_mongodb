@@ -1,4 +1,4 @@
-Expression docker_alpine_mongodb
+Docker Alpine Mongodb
 ==============
 
 This is Docker mongoDB running on Alpine
