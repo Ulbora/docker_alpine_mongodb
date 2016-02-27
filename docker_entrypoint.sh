@@ -10,11 +10,4 @@ if [ "$1" = 'mongod' ]; then
 	chown -R mongodb /data/db	
 fi
 
-if [ "$1" = 'mongod' ]; then
-	numa='numactl --interleave=all'
-	if $numa true &> /dev/null; then
-		set -- $numa "$@"
-	fi
-fi
-
 exec "$@"
